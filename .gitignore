@@ -1,1 +1,5 @@
 .DS_Store
+test_api/.DS_Store
+.env
+test_api/__pycache__
+test_api/api/__pycache__
