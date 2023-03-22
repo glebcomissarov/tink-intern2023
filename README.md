@@ -142,18 +142,23 @@ components:
 
 ## API test
 
-Я написал небольшой сервер (на FastAPI)
+Для проверки, я написал небольшой сервер (на FastAPI) который по GET запросу выдает json ответ с данными описанного выше формата ([API doc (openapi)](#api-doc-openapi))
 
 ```sh
 # клонируем репозиторий
-git clone
+git clone https://github.com/glebcomissarov/tink-intern2023.git
+cd tink-intern2023
 
 # создаем и активируем виртуальное окружение
 python3.11 -m venv .env
 source .env/bin/activate
 
 # скачиваем зависитости
-
+pip install -r test_api/requirements.txt
 
 # запускаем сервер
+uvicorn test_api.api.shop_api:app --reload
+
+# в новом окне запустим
+python test_api/main.py
 ```
