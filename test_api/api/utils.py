@@ -38,7 +38,6 @@ def create_database(save_to_json=False):
 
 def get_json():
     con = duckdb.connect(database="./test_api/purchases_data.duckdb", read_only=True)
-    # con.sql("SELECT * FROM purchases").df().to_json(orient="records")
     return con.sql("SELECT * FROM purchases").df().to_json(orient="records")
 
 

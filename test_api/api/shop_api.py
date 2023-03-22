@@ -44,15 +44,6 @@ def get_purchases(date: str, bank_name: str) -> Purchases:
     an array of purchares that were made
     using the cards of the specified bank
     """
-    # try:
-    #     datetime.strptime(date, r"%Y-%m-%d")
-    # except ValueError:
-    #     raise HTTPException(status_code=404, detail="Item not found")
-
-    # try:
-    #     isinstance(type(bank_name) == str)
-    # except TypeError:
-    #     raise HTTPException(status_code=404, detail="Item not found")
 
     response_str = StringIO()
     response_str.write('{"response": ')

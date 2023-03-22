@@ -24,7 +24,7 @@
 2. При оплате, магазин посылает запрос в банк для подтверждения операции. Эти данные можно использовать чтобы связать покупку и клиента (`purchase_id <---> client_id`).
 3. Соответственно, от магазина нам нужно запросить только `purchase_id` с привязанными к нему данными о покупке (товар, категория, цена и пр.). Этот запрос я описал ниже в разделе [API doc (openapi)](#api-doc-openapi)
 
-<img src="./imgs/process.jpg" width=750>
+<img src="./imgs/general_process.jpg" width=750>
 
 ## API doc (openapi)
 
@@ -138,7 +138,7 @@ components:
 
 Основная таблица в схеме - `purchases`. Искомая таблица может быть получена с помощью join запросов.
 
-<img src="./imgs/dbs.jpg" width=750>
+<img src="./imgs/dbs_descr.jpg" width=750>
 
 ## API test
 
